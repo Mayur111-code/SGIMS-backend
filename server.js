@@ -78,8 +78,7 @@ app.get("/", (req, res) => res.send("SGIMS Backend Running Successfully!"));
 
 // START SERVER
 const PORT = process.env.PORT || 5000;
-const HOST = "127.0.0.1";
 
-app.listen(PORT, HOST, () =>
-  console.log(`Backend running at ➜ http://${HOST}:${PORT}`)
-);
+app.listen(PORT, () => {
+  console.log(`Backend running on port ${PORT}`);
+});
