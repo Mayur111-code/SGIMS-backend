@@ -56,7 +56,7 @@ connectDB();
 
 // CORS FIX FOR FRONTEND (VERY IMPORTANT)
 app.use(cors({
-  origin: "https://sgims.vercel.app/"   // frontend url
+  origin: "https://sgims.vercel.app/" || "http://localhost:5173",   // frontend url
   credentials: true,                 // allow cookies/JWT
   methods: "GET,POST,PUT,DELETE",
   allowedHeaders: "Content-Type,Authorization"
